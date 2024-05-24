@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+
+  div.search-bar
+    form(method="GET")
+      input(type="text" name="search" placeholder="Search books")
+      button(type="submit") Search
+
+  if book_list.length
+    ul.book-list
+      each book in book_list
+        li
+          a(href=book.url) #{book.title}
+          |  (#{book.author.name})
+
+  else
+    p There are no books.
+
+  script(src="/javascripts/searchBar.js")
