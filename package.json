@@ -2,7 +2,7 @@
   "name": "express-locallibrary-tutorial",
   "version": "0.0.0",
   "engines": {
-    "node": ">= 18.14.2"
+    "node": ">= 16.x"
   },
   "private": true,
   "scripts": {
